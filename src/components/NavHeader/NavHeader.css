@@ -1,0 +1,27 @@
+.NavHeader {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  padding: 0 50px;
+  background-color: white;
+}
+
+.NavHeader * {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.NavHeader img {
+  height: 50%;
+}
+
+.NavHeader .right {
+  position: relative;
+  float: right;
+  padding: 0 5px;
+  font-family: Arial;
+  font-size: .5em;
+}

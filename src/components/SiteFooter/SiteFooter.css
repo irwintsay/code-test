@@ -1,0 +1,9 @@
+.SiteFooter {
+  background-color: #FFF;
+  text-align: center;
+}
+
+.footer-item {
+  display: inline;
+  font-size: .5em;
+}

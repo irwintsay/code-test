@@ -1,0 +1,44 @@
+.Carousel {
+  position: relative;
+  margin: auto;
+  max-width: 1440px;
+}
+
+.Carousel .hero-copy {
+  color: #FFF;
+  z-index: 3;
+}
+
+.Carousel .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.Carousel .screen {
+  background-color: black;
+  opacity: .41;
+  z-index: 2;
+}
+
+.Carousel img {
+  display: block;
+  width: 100%;
+}
+
+.Carousel .large-text {
+  display: block;
+  font-size: 2em;
+}
+
+.Carousel .medium-text {
+  font-size: 1em;
+}
+
+.Carousel .small-text {
+  display: block;
+  font-size: .5em;
+  line-height: 1.5;
+}
