@@ -1,13 +1,31 @@
 .Carousel {
   position: relative;
   margin: auto;
+  width: 100vw;
   max-width: 1440px;
 }
 
+.Carousel .hero-1 {
+  background: url(../../assets/img/hero-landing.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 50px);
+  max-height: 580px;
+}
+
+.Carousel .fixed-aspect-ratio {
+  height: calc(100vw * .76);
+}
+
 .Carousel .hero-copy {
+  position: absolute;
+  top: 40%;
   color: #FFF;
   z-index: 3;
-  padding: 10% 0 0 10%;  
+  padding-left: 50px;  
 }
 
 .Carousel .overlay {
@@ -24,23 +42,19 @@
   z-index: 2;
 }
 
-.Carousel img {
-  display: block;
-  width: 100%;
-}
-
 .Carousel .large-text {
   display: block;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .Carousel .medium-text {
-  font-size: 1em;
+  margin: .6em 0;
+  font-size: 1.2em;
 }
 
 .Carousel .small-text {
   display: block;
-  font-size: .5em;
+  font-size: .6em;
   line-height: 1.5;
 }
 
