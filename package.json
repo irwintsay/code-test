@@ -5,8 +5,7 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-masonry-infinite": "^1.1.0",
-    "react-masonry-layout": "^0.2.3"
+    "react-slick": "^0.14.7"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

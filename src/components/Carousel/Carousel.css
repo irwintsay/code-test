@@ -3,10 +3,32 @@
   margin: auto;
   width: 100vw;
   max-width: 1440px;
+  overflow-x: hidden;
 }
 
-.Carousel .hero-1 {
+.slick-slider, .slick-list, .slick-track {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 74px);
+  max-height: 580px;
+}
+
+.first {
   background: url(../../assets/img/hero-landing.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 74px);
+  max-height: 580px;
+}
+
+.second {
+  background: url(../../assets/img/hero-2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,8 +38,19 @@
   max-height: 580px;
 }
 
-.Carousel .fixed-aspect-ratio {
-  height: calc(100vw * .76);
+.third {
+  background: url(../../assets/img/hero-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 50px);
+  max-height: 580px;
+}
+
+.fixed-aspect-ratio {
+  height: calc(100vw * .76) !important;
 }
 
 .Carousel .hero-copy {

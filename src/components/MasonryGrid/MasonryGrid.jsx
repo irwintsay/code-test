@@ -8,20 +8,6 @@ import card4 from '../../assets/img/card-4.png';
 import card5 from '../../assets/img/card-5.png';
 import card6 from '../../assets/img/card-6.png';
 
-// const MasonryGrid = props => (
-//   <div className="MasonryGrid">
-//     <ul className="content">
-//       <li><MasonryItem source="http://cdn.playbuzz.com/cdn/7a7a5814-ed79-410c-b748-db6a24f73f0b/4d71c010-f930-4334-ba62-79d87a7ddef4.jpg" /></li>
-//       <li><div className="masonry-item"><img src="http://bloximages.newyork1.vip.townnews.com/dailyprogress.com/content/tncms/assets/v3/editorial/8/aa/8aabb05a-1817-11e3-870e-0019bb30f31a/522bba8a1bfd6.image.jpg" alt="" /></div></li>
-//       <li><div className="masonry-item"><img src="http://cdn.playbuzz.com/cdn/7a7a5814-ed79-410c-b748-db6a24f73f0b/4d71c010-f930-4334-ba62-79d87a7ddef4.jpg" alt="blah" /></div></li>
-//       <li><div className="masonry-item"><img src="http://bloximages.newyork1.vip.townnews.com/dailyprogress.com/content/tncms/assets/v3/editorial/8/aa/8aabb05a-1817-11e3-870e-0019bb30f31a/522bba8a1bfd6.image.jpg" alt="" /></div></li>
-//       <li><div className="masonry-item"><img src="http://bloximages.newyork1.vip.townnews.com/dailyprogress.com/content/tncms/assets/v3/editorial/8/aa/8aabb05a-1817-11e3-870e-0019bb30f31a/522bba8a1bfd6.image.jpg" alt="" /></div></li>
-//       <li><div className="masonry-item"><img src="http://cdn.playbuzz.com/cdn/7a7a5814-ed79-410c-b748-db6a24f73f0b/4d71c010-f930-4334-ba62-79d87a7ddef4.jpg" alt="blah" /></div></li>
-//       <li><div className="masonry-item"><img src="http://bloximages.newyork1.vip.townnews.com/dailyprogress.com/content/tncms/assets/v3/editorial/8/aa/8aabb05a-1817-11e3-870e-0019bb30f31a/522bba8a1bfd6.image.jpg" alt="" /></div></li>
-//     </ul>
-//   </div>
-// );
-
 class MasonryGrid extends Component {
   constructor() {
     super();

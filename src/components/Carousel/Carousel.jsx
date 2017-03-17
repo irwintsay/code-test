@@ -1,19 +1,34 @@
 import React, { Component } from 'react';
+import Slider from './Slider';
 import './Carousel.css';
 
 class Carousel extends Component {
   checkCarouselRatio() {
-    let hero = document.querySelector('.hero-1');
-    if(hero.offsetWidth * .75 < hero.offsetHeight) {
-      hero.classList.add('fixed-aspect-ratio');
+    let first = document.querySelector('.hero.first');
+    let second = document.querySelector('.hero.second');
+    let third = document.querySelector('.hero.third');
+    let slider = document.querySelector('.slick-slider');
+    let active = document.querySelector('.slick-active');
+    if(first.offsetWidth * .75 < first.offsetHeight) {
+      active.classList.add('fixed-aspect-ratio');
+      first.classList.add('fixed-aspect-ratio');
+      second.classList.add('fixed-aspect-ratio');
+      third.classList.add('fixed-aspect-ratio');
+      slider.classList.add('fixed-aspect-ratio');
     } else {
-      hero.classList.remove('fixed-aspect-ratio');
+      active.classList.remove('fixed-aspect-ratio');
+      first.classList.remove('fixed-aspect-ratio');
+      second.classList.remove('fixed-aspect-ratio');
+      third.classList.remove('fixed-aspect-ratio');
+      slider.classList.remove('fixed-aspect-ratio');
     }
   }
 
   componentDidMount() {
-    this.checkCarouselRatio();
+    // Janky work-around for getting the fixed-aspect-ratio to apply on fresh page load
+    setTimeout(this.checkCarouselRatio.bind(this), 10);
     window.addEventListener('resize', this.checkCarouselRatio.bind(this));
+    console.log(document.querySelector('.Carousel').style.height);
   }
 
   render() {
@@ -27,7 +42,7 @@ class Carousel extends Component {
           <span className="small-text acaslonpro">with our special guest, director Peter Lindberg.</span>
         </div>
         <div className="overlay screen"></div>
-        <div className="hero-1"></div>
+        <Slider checkCarousel={ this.checkCarouselRatio.bind(this) } />
       </div>
     );
   }
