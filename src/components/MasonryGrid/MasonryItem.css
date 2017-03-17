@@ -1,0 +1,41 @@
+.MasonryItem {
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  transition: .5s opacity;
+}
+
+.MasonryItem img {
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+}
+
+.MasonryItem .date {
+  display: block;
+  margin: 25px 0 15px 0;
+  font-size: .5em;
+  font-family: Arial;
+}
+
+.MasonryItem .title {
+  display: block;
+  font-size: 1.75em;
+}
+
+.MasonryItem:hover {
+  cursor: pointer;
+}
+
+.MasonryItem:hover .title {
+  text-decoration: underline;
+}
+.MasonryItem .presented {
+  font-size: .5em;
+}
+
+.presented .author {
+  text-decoration: underline;
+}

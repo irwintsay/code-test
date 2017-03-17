@@ -1,0 +1,23 @@
+.MasonryGrid {
+  width: 100%;
+  margin: 0 auto 100px 0;
+}
+ 
+.content {
+  -moz-column-count: 3;
+  -moz-column-gap: 25px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 25px;
+  column-count: 3;
+  column-gap: 40px;
+  width: calc(100% - 100px);
+  margin: 25px 50px;
+}
+
+.content:hover .MasonryItem {
+  opacity: .5;
+}
+
+.content:hover .MasonryItem:hover {
+  opacity: 1;
+}

@@ -12,30 +12,12 @@ class SiteContent extends Component {
   state = {
     count: 0,
     isLoading: false,
-    items: Array(20).fill()
-  }
- 
- 
-  getItems() {
-    if (this.state.count >= this.props.maxCount) return
-    this.setState(Object.assign(
-      {},
-      this.state,
-      { isLoading: true }
-    ), () => {
-      setTimeout(() => {
-        this.setState(Object.assign(
-          {},
-          this.state,
-          {
-            isLoading: false,
-            items: this.state.items.concat(
-              Array(this.props.perPage).fill()
-            )
-          }
-        ))
-      })
-    })
+    items: Array(20).fill(),
+    size: [
+            { columns: 2, gutter: 20 }, 
+            { mq: '768px', columns: 3, gutter: 20 },
+            { mq: '1024px', columns: 4, gutter: 20 } 
+          ]
   }
  
   render() {
@@ -43,8 +25,9 @@ class SiteContent extends Component {
       <div className="SiteContent">
         <MasonryLayout
           id="items"
-          infiniteScroll={this.getItems.bind(this)}
-          infiniteScrollLoading={this.state.isLoading} >
+          infiniteScroll={ () => { return } }
+          infiniteScrollDisabled={ true }
+          style={{ width: '100%' }}>
      
           {this.state.items.map((v, i) => <div
             key={i}

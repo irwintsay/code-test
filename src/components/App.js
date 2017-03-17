@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 // Components
 import NavHeader from './NavHeader/NavHeader';
 import Carousel from './Carousel/Carousel';
-import MasonGrid from './MasonGrid/MasonGrid';
-import SiteContent from './SiteContent/SiteContent';
+import MasonryGrid from './MasonryGrid/MasonryGrid';
 import SiteFooter from './SiteFooter/SiteFooter';
 
 // Assets, CSS, Images
@@ -17,7 +16,7 @@ class App extends Component {
       <div className="App">
         <NavHeader />
         <Carousel />
-        <MasonGrid />
+        <MasonryGrid />
         <SiteFooter />
       </div>
     );
