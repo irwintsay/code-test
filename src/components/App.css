@@ -1,5 +1,6 @@
 .App {
-  margin: 50px auto;
+  margin: 50px auto 25px auto;
+  min-width: 320px;
   max-width: 1440px;
 }
 
@@ -9,4 +10,194 @@
 
 .springville {
   font-family: '../assets/fonts/Springville-Regular3.otf';
+}
+
+@media only screen and (min-width: 400px) and (max-width: 480px) {
+  .Carousel .large-text {
+    font-size: 1.7em;
+  }
+
+  .footer-item {
+    font-size: .4em;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .Carousel .large-text {
+    font-size: 2em;
+  }
+
+  .MasonryItem .title {
+    font-size: 1.3em;
+  }
+
+  .footer-item {
+    font-size: .5em;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .App {
+    margin: 50px auto;
+  }
+
+  .NavHeader {
+    padding: 0 50px;
+  }
+
+  .Carousel .hero-1 {
+    height: calc(100vh - 50px);
+  }
+
+  .Carousel .hero-copy {
+    top: 35%;
+    padding-left: 50px;  
+  }
+
+  .Carousel .large-text {
+    font-size: 2.2em;
+  }
+
+  .content {
+    -moz-column-count: 3;
+    -moz-column-gap: 25px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 25px;
+    column-count: 3;
+    column-gap: 25px;
+    width: calc(100% - 100px);
+    margin: 25px 50px;
+  }
+
+  .MasonryGrid {
+    margin: 0 auto 100px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .MasonryItem .title {
+    font-size: 1.75em;
+  }
+
+  .Carousel .medium-text {
+    margin: .6em 0;
+    font-size: 1.2em;
+  }
+
+  .Carousel .small-text {
+    display: block;
+    font-size: .8em;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .App {
+    margin: 60px auto;
+  }
+  .NavHeader {
+    height: 60px;
+    padding: 0 60px;
+  }
+
+  .Carousel .hero-1 {
+    height: calc(100vh - 60px);
+  }
+
+  .Carousel .hero-copy {
+    padding-left: 60px;  
+  }
+
+  .Carousel .large-text {
+    font-size: 2.5em;
+  }
+
+  .content {
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+    width: calc(100% - 120px);
+    margin: 30px 60px;
+  }
+
+  .MasonryItem .title {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .App {
+    margin: 70px auto;
+  }
+  .NavHeader {
+    height: 70px;
+    padding: 0 100px;
+  }
+
+  .Carousel .hero-1 {
+    height: calc(100vh - 70px);
+  }
+
+  .Carousel .hero-copy {
+    padding-left: 100px;  
+  }
+
+  .Carousel .large-text {
+    font-size: 2.7em;
+  }
+
+  .content {
+    -moz-column-gap: 50px;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    width: calc(100% - 200px);
+    margin: 75px 100px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .App {
+    margin: 80px auto;
+  }
+  .NavHeader {
+    height: 80px;
+    padding: 0 120px;
+  }
+
+  .NavHeader img {
+    height: 40%;
+  }
+
+  .Carousel .hero-1 {
+    height: calc(100vh - 80px);
+  }
+
+  .Carousel .hero-copy {
+    padding-left: 120px;  
+  }
+
+  .Carousel .large-text {
+    font-size: 3em;
+  }
+
+  .content {
+    -moz-column-gap: 60px;
+    -webkit-column-gap: 60px;
+    column-gap: 60px;
+    width: calc(100% - 240px);
+    margin: 75px 120px;
+  }
+
+  .MasonryItem {
+    padding-bottom: 30px;
+  }
+
+  .MasonryItem img {
+    margin-top: 30px;
+  }
+
+  .MasonryItem .title {
+    font-size: 2.7em;
+    margin-bottom: .5em;
+  }
 }

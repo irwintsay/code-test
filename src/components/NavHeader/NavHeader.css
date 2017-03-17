@@ -4,8 +4,8 @@
   width: 100%;
   top: 0;
   z-index: 10;
-  padding: 0 50px;
-  background-color: white;
+  padding: 0 25px;
+  background-color: #FFF;
 }
 
 .NavHeader * {
@@ -15,7 +15,11 @@
 }
 
 .NavHeader img {
-  height: 50%;
+  height: 35%;
+}
+
+.NavHeader img.right {
+  height: 18%;
 }
 
 .NavHeader .right {
@@ -24,4 +28,8 @@
   padding: 0 5px;
   font-family: Arial;
   font-size: .5em;
+}
+
+.NavHeader .login:hover {
+  cursor: pointer;
 }

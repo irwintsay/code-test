@@ -12,6 +12,7 @@ class Carousel extends Component {
   }
 
   componentDidMount() {
+    this.checkCarouselRatio();
     window.addEventListener('resize', this.checkCarouselRatio.bind(this));
   }
 
